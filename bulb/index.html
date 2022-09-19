@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bulb on off</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script>
+            function bulbon(){
+            img=document.getElementById('bulb');
+            if(img.getAttribute('src')=="Bulb_off.png")
+            {
+                img.src='Bulb_on.png';
+            }
+            else
+            {
+                img.src='Bulb_off.png';
+            }
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <img id="bulb" src="Bulb_off.png" onclick="bulbon()"/>
+        </div>
+    </body>
+</html>
